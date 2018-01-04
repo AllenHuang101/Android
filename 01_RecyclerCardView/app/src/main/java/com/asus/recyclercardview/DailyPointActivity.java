@@ -8,11 +8,11 @@ import android.support.v7.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class DailyPointActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
-    private List<Point> mPoints = new ArrayList<>();
+    private List<PointSummary> mPoints = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,19 +27,19 @@ public class MainActivity extends AppCompatActivity {
 
         mPoints = getPointData();
 
-        mAdapter = new PointAdapter(mPoints);
+        mAdapter = new PointDailyAdapter(mPoints);
         mRecyclerView.setAdapter(mAdapter);
     }
 
-    private List<Point> getPointData() {
+    private List<PointSummary> getPointData() {
 
-        List<Point> points = new ArrayList<>();
+        List<PointSummary> points = new ArrayList<>();
 
-        Point point1 = new Point("2017/01/02", 100, 300);
-        Point point2 = new Point("2017/01/03", 200, 300);
-        Point point3 = new Point("2017/01/04", 200, 300);
-        Point point4 = new Point("2017/01/04", 200, 300);
-        Point point5 = new Point("2017/01/04", 200, 300);
+        PointSummary point1 = new PointSummary("2017/01/02", 100, 300);
+        PointSummary point2 = new PointSummary("2017/01/03", 200, 300);
+        PointSummary point3 = new PointSummary("2017/01/04", 200, 300);
+        PointSummary point4 = new PointSummary("2017/01/04", 200, 300);
+        PointSummary point5 = new PointSummary("2017/01/04", 200, 300);
 
         points.add(point1);
         points.add(point2);

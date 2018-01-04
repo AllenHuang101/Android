@@ -12,8 +12,8 @@ import java.util.List;
  * Created by Allen on 2018/1/2.
  */
 
-public class PointAdapter extends RecyclerView.Adapter<PointAdapter.ViewHolder> {
-    private List<Point> mPoints;
+public class PointDailyAdapter extends RecyclerView.Adapter<PointDailyAdapter.ViewHolder> {
+    private List<PointSummary> mPoints;
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
@@ -29,14 +29,14 @@ public class PointAdapter extends RecyclerView.Adapter<PointAdapter.ViewHolder> 
         }
     }
 
-    public PointAdapter(List<Point> points) {
+    public PointDailyAdapter(List<PointSummary> points) {
         mPoints = points;
     }
 
     // Create new views (invoked by the layout manager)
     @Override
-    public PointAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,
-                                                      int viewType) {
+    public PointDailyAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,
+                                                           int viewType) {
         View v = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.recycler_item, parent, false);
 

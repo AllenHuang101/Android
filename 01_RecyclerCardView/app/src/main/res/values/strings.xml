@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RecyclerCardView</string>
+    <string name="title_activity_period">PeriodActivity</string>
 </resources>

@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
  * Created by Allen on 2018/1/2.
  */
 
-public class Point {
+public class PointSummary {
     @SerializedName("PointDate")
     private String mPointDate;
 
@@ -16,7 +16,7 @@ public class Point {
     @SerializedName("UniversityPoint")
     private int mUniversityPoint;
 
-    public Point(String pointDate, int saleRecordPoint, int universityPoint) {
+    public PointSummary(String pointDate, int saleRecordPoint, int universityPoint) {
         this.mPointDate = pointDate;
         this.mSaleRecordPoint = saleRecordPoint;
         this.mUniversityPoint = universityPoint;
