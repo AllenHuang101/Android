@@ -83,9 +83,11 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 
-        zipLab();
+
+        //zipLab();
         //flowableLab();
     }
+
 
     private void zipLab() {
         final String FUN_TAG = "ZipLab";
